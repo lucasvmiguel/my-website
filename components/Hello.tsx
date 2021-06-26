@@ -3,7 +3,12 @@ interface HelloProps {
 }
 
 const Hello = ({ name }: HelloProps) => {
-  return <span>Hello {name}</span>
+  return (
+    <>
+      <p data-testid="hello-title">Hello {name}</p>
+      <span>another nice message</span>
+    </>
+  )
 }
 
 export default Hello
