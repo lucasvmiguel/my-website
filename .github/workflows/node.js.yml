@@ -29,6 +29,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
+          install-command: npm i
           build: yarn run build
           start: yarn start
           wait-on: 'http://localhost:3000'
