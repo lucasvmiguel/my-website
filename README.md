@@ -29,10 +29,15 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 ## Testing
 
+### How to run unit and integration tests
 ```
 npm test
 ```
 
+### How to run E2E tests
+```
+node_modules/.bin/cypress open
+```
 
 ## Learn More
 
