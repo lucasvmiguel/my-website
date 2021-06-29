@@ -2,7 +2,6 @@
 
 describe('Home page', () => {
   beforeEach(() => {
-    cy.viewport(1280, 1162)
     cy.visit('http://localhost:3000')
   })
 

@@ -36,7 +36,7 @@ npm test
 
 ### How to run E2E tests
 ```
-node_modules/.bin/cypress open
+npm run test:e2e
 ```
 
 ## Learn More
