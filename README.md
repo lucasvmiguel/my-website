@@ -35,6 +35,8 @@ npm test
 ```
 
 ### How to run E2E tests
+
+To run the E2E tests and to save new snapshots run the following command:
 ```
 npm run test:e2e
 ```
