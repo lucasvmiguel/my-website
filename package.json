@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
-    "test:e2e": "cypress run"
+    "test:e2e": "cypress run --browser chrome --headless"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.0.13",
