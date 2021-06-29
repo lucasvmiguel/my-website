@@ -33,11 +33,3 @@ jobs:
           build: yarn run build
           start: yarn start
           wait-on: 'http://localhost:3000'
-          headless: true
-          browser: chrome
-      - name: Cypress catch screenshot if fails
-        uses: actions/upload-artifact@v1
-        if: failure()
-        with:
-          name: cypress-screenshots
-          path: cypress/screenshots
