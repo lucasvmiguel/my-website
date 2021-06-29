@@ -31,7 +31,7 @@ const TopSection = () => {
               Meet
             </Text>
             <br />
-            <Text as={'span'} color={'black.400'} position={'relative'}
+            <Text id="heading-my-name" as={'span'} color={'black.400'} position={'relative'}
               _after={{
                 content: "''",
                 width: 'full',

@@ -21,6 +21,7 @@ exports[`renders TopSection component correctly - snapshot 1`] = `
         <br />
         <span
           className="chakra-text css-1690f2e"
+          id="heading-my-name"
         >
           Lucas Vieira
         </span>
