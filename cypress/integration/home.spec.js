@@ -5,8 +5,8 @@ describe('Home page', () => {
     cy.visit('http://localhost:3000')
   })
 
-  it('displays hello lucas', () => {
-    cy.get('[data-testid="hello-title"]')
-      .should('have.text', 'Hello Lucas')
+  it('main heading displays Lucas Vieira', () => {
+    cy.get('#heading-my-name')
+      .should('have.text', 'Lucas Vieira')
   })
 })

@@ -35,8 +35,10 @@ npm test
 ```
 
 ### How to run E2E tests
+
+To run the E2E tests and to save new snapshots run the following command:
 ```
-node_modules/.bin/cypress open
+npm run test:e2e
 ```
 
 ## Learn More

@@ -1,0 +1,355 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Employers component correctly - snapshot 1`] = `
+<div
+  className="css-1mkcx3b"
+>
+  <div
+    className="chakra-stack chakra-container css-lxy0v2"
+  >
+    <div
+      className="chakra-stack css-jp20jv"
+    >
+      <h2
+        className="chakra-heading css-0"
+      >
+        Employers
+      </h2>
+      <p
+        className="chakra-text css-0"
+      >
+        Companies that trust in me
+      </p>
+    </div>
+    <div
+      className="chakra-stack css-1itflco"
+    >
+      <div
+        className="css-0"
+      >
+        <div
+          className="chakra-stack css-e5fz58"
+        >
+          <h3
+            className="chakra-heading css-6dvxm2"
+          >
+            Software Engineer
+          </h3>
+          <p
+            className="chakra-text css-1cuin5z"
+          >
+            <span
+              className="css-1sndsea"
+            >
+              Kubernetes
+            </span>
+            <span
+              className="css-1sndsea"
+            >
+              Go
+            </span>
+            <span
+              className="css-1sndsea"
+            >
+              Helm
+            </span>
+            <span
+              className="css-1sndsea"
+            >
+              Istio
+            </span>
+            <span
+              className="css-1sndsea"
+            >
+              Terraform
+            </span>
+            <span
+              className="css-1sndsea"
+            >
+              Ruby
+            </span>
+            <span
+              className="css-1sndsea"
+            >
+              Ruby on Rails
+            </span>
+            <span
+              className="css-1sndsea"
+            >
+              Sidekiq
+            </span>
+            <span
+              className="css-1sndsea"
+            >
+              React
+            </span>
+            <span
+              className="css-1sndsea"
+            >
+              AWS
+            </span>
+            <span
+              className="css-1sndsea"
+            >
+              Docker
+            </span>
+          </p>
+        </div>
+        <div
+          className="css-w6zqsg"
+        >
+          <span
+            alt="Workday"
+            className="chakra-avatar css-ggnqxp"
+          >
+            <svg
+              aria-label=" avatar"
+              className="chakra-avatar__svg css-16ite8i"
+              role="img"
+              viewBox="0 0 128 128"
+            >
+              <path
+                d="M103,102.1388 C93.094,111.92 79.3504,118 64.1638,118 C48.8056,118 34.9294,111.768 25,101.7892 L25,95.2 C25,86.8096 31.981,80 40.6,80 L87.4,80 C96.019,80 103,86.8096 103,95.2 L103,102.1388 Z"
+                fill="currentColor"
+              />
+              <path
+                d="M63.9961647,24 C51.2938136,24 41,34.2938136 41,46.9961647 C41,59.7061864 51.2938136,70 63.9961647,70 C76.6985159,70 87,59.7061864 87,46.9961647 C87,34.2938136 76.6985159,24 63.9961647,24"
+                fill="currentColor"
+              />
+            </svg>
+          </span>
+          <div
+            className="chakra-stack css-1rreaqf"
+          >
+            <p
+              className="chakra-text css-35ezg3"
+            >
+              Workday
+            </p>
+            <p
+              className="chakra-text css-130t7v7"
+            >
+              Finance, HR, and planning
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        className="css-0"
+      >
+        <div
+          className="chakra-stack css-e5fz58"
+        >
+          <h3
+            className="chakra-heading css-6dvxm2"
+          >
+            Software Engineer
+          </h3>
+          <p
+            className="chakra-text css-1cuin5z"
+          >
+            <span
+              className="css-1sndsea"
+            >
+              React
+            </span>
+            <span
+              className="css-1sndsea"
+            >
+              Redux
+            </span>
+            <span
+              className="css-1sndsea"
+            >
+              NodeJS
+            </span>
+            <span
+              className="css-1sndsea"
+            >
+              React Router
+            </span>
+            <span
+              className="css-1sndsea"
+            >
+              Google Analytics
+            </span>
+            <span
+              className="css-1sndsea"
+            >
+              Elasticsearch
+            </span>
+            <span
+              className="css-1sndsea"
+            >
+              MySQL
+            </span>
+            <span
+              className="css-1sndsea"
+            >
+              Express
+            </span>
+            <span
+              className="css-1sndsea"
+            >
+              Sequelize
+            </span>
+            <span
+              className="css-1sndsea"
+            >
+              Redux Form
+            </span>
+            <span
+              className="css-1sndsea"
+            >
+              AWS
+            </span>
+          </p>
+        </div>
+        <div
+          className="css-w6zqsg"
+        >
+          <span
+            alt="Noa"
+            className="chakra-avatar css-ggnqxp"
+          >
+            <svg
+              aria-label=" avatar"
+              className="chakra-avatar__svg css-16ite8i"
+              role="img"
+              viewBox="0 0 128 128"
+            >
+              <path
+                d="M103,102.1388 C93.094,111.92 79.3504,118 64.1638,118 C48.8056,118 34.9294,111.768 25,101.7892 L25,95.2 C25,86.8096 31.981,80 40.6,80 L87.4,80 C96.019,80 103,86.8096 103,95.2 L103,102.1388 Z"
+                fill="currentColor"
+              />
+              <path
+                d="M63.9961647,24 C51.2938136,24 41,34.2938136 41,46.9961647 C41,59.7061864 51.2938136,70 63.9961647,70 C76.6985159,70 87,59.7061864 87,46.9961647 C87,34.2938136 76.6985159,24 63.9961647,24"
+                fill="currentColor"
+              />
+            </svg>
+          </span>
+          <div
+            className="chakra-stack css-1rreaqf"
+          >
+            <p
+              className="chakra-text css-35ezg3"
+            >
+              Noa
+            </p>
+            <p
+              className="chakra-text css-130t7v7"
+            >
+              Journalism over audio
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        className="css-0"
+      >
+        <div
+          className="chakra-stack css-e5fz58"
+        >
+          <h3
+            className="chakra-heading css-6dvxm2"
+          >
+            Software Engineer
+          </h3>
+          <p
+            className="chakra-text css-1cuin5z"
+          >
+            <span
+              className="css-1sndsea"
+            >
+              Go
+            </span>
+            <span
+              className="css-1sndsea"
+            >
+              Elasticsearch
+            </span>
+            <span
+              className="css-1sndsea"
+            >
+              Clojure
+            </span>
+            <span
+              className="css-1sndsea"
+            >
+              React
+            </span>
+            <span
+              className="css-1sndsea"
+            >
+              Redux
+            </span>
+            <span
+              className="css-1sndsea"
+            >
+              AngularJS
+            </span>
+            <span
+              className="css-1sndsea"
+            >
+              Microservices
+            </span>
+            <span
+              className="css-1sndsea"
+            >
+              Mongo
+            </span>
+            <span
+              className="css-1sndsea"
+            >
+              AWS
+            </span>
+            <span
+              className="css-1sndsea"
+            >
+              Docker
+            </span>
+          </p>
+        </div>
+        <div
+          className="css-w6zqsg"
+        >
+          <span
+            alt="B2W"
+            className="chakra-avatar css-ggnqxp"
+          >
+            <svg
+              aria-label=" avatar"
+              className="chakra-avatar__svg css-16ite8i"
+              role="img"
+              viewBox="0 0 128 128"
+            >
+              <path
+                d="M103,102.1388 C93.094,111.92 79.3504,118 64.1638,118 C48.8056,118 34.9294,111.768 25,101.7892 L25,95.2 C25,86.8096 31.981,80 40.6,80 L87.4,80 C96.019,80 103,86.8096 103,95.2 L103,102.1388 Z"
+                fill="currentColor"
+              />
+              <path
+                d="M63.9961647,24 C51.2938136,24 41,34.2938136 41,46.9961647 C41,59.7061864 51.2938136,70 63.9961647,70 C76.6985159,70 87,59.7061864 87,46.9961647 C87,34.2938136 76.6985159,24 63.9961647,24"
+                fill="currentColor"
+              />
+            </svg>
+          </span>
+          <div
+            className="chakra-stack css-1rreaqf"
+          >
+            <p
+              className="chakra-text css-35ezg3"
+            >
+              B2W
+            </p>
+            <p
+              className="chakra-text css-130t7v7"
+            >
+              E-commerce
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders TopSection component correctly - snapshot 1`] = `
+<div
+  className="chakra-container css-1vizhg4"
+>
+  <div
+    className="chakra-stack css-an8ggw"
+  >
+    <div
+      className="chakra-stack css-34nqyp"
+    >
+      <h2
+        className="chakra-heading css-a37apy"
+      >
+        <span
+          className="chakra-text css-79elbk"
+        >
+          Meet
+        </span>
+        <br />
+        <span
+          className="chakra-text css-1690f2e"
+          id="heading-my-name"
+        >
+          Lucas Vieira
+        </span>
+      </h2>
+      <p
+        className="chakra-text css-ax9bdp"
+      >
+        I’ve been working for ten years, where eight years were dedicated to software development. I like to be in a workspace that challenges and makes me learn new things, software or business wise.
+      </p>
+      <div
+        className="chakra-stack css-1x6y6bv"
+      >
+        <button
+          className="chakra-button css-1qr89hb"
+          type="button"
+        >
+          About me
+        </button>
+        <button
+          className="chakra-button css-1va7ykg"
+          type="button"
+        >
+          Articles
+        </button>
+      </div>
+    </div>
+    <div
+      className="css-jtqt5c"
+    >
+      <svg
+        className="chakra-icon css-16tf0pj"
+        focusable={false}
+        viewBox="0 0 578 440"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clipRule="evenodd"
+          d="M239.184 439.443c-55.13-5.419-110.241-21.365-151.074-58.767C42.307 338.722-7.478 282.729.938 221.217c8.433-61.644 78.896-91.048 126.871-130.712 34.337-28.388 70.198-51.348 112.004-66.78C282.34 8.024 325.382-3.369 370.518.904c54.019 5.115 112.774 10.886 150.881 49.482 39.916 40.427 49.421 100.753 53.385 157.402 4.13 59.015 11.255 128.44-30.444 170.44-41.383 41.683-111.6 19.106-169.213 30.663-46.68 9.364-88.56 35.21-135.943 30.551z"
+          fill="currentColor"
+          fillRule="evenodd"
+        />
+      </svg>
+      <div
+        className="css-1969jmf"
+      >
+        <img
+          alt="Hero Image"
+          className="chakra-image__placeholder css-1qtvm2r"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
