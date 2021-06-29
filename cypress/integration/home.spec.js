@@ -5,8 +5,9 @@ describe('Home page', () => {
     cy.visit('http://localhost:3000')
   })
 
-  it('displays hello lucas', () => {
-    cy.get('[data-testid="hello-title"]')
-      .should('have.text', 'Hello Lucas')
+  it('matches snapshot of home page', () => {
+    // eslint-disable-next-line cypress/no-unnecessary-waiting
+    cy.wait(3000) // to wait the images to load
+    cy.matchImageSnapshot()
   })
 })
