@@ -12,7 +12,12 @@ import {
   PopoverTrigger,
   PopoverContent,
   useColorModeValue,
-  useDisclosure
+  useDisclosure,
+  MenuButton,
+  Menu,
+  MenuItem,
+  MenuList,
+  Avatar
 } from '@chakra-ui/react'
 import {
   HamburgerIcon,
@@ -20,6 +25,7 @@ import {
   ChevronDownIcon,
   ChevronRightIcon
 } from '@chakra-ui/icons'
+import { useUser, UserProfile } from '@auth0/nextjs-auth0'
 
 import { NavItem } from '../../lib/navbar'
 import ColorModeButton from './ColorModeButton'
@@ -28,9 +34,63 @@ import Logo from './Logo'
 interface NavbarProps {
   items: NavItem[]
 }
+interface ProfileMenuProps {
+  user?: UserProfile
+}
+
+const SignMenu = () => {
+  return (
+    <>
+      <Button
+        as={'a'}
+        fontSize={'sm'}
+        fontWeight={400}
+        variant={'link'}
+        href={'/api/auth/login'}>
+        Sign In
+      </Button>
+      <Button
+        as={'a'}
+        display={{ base: 'none', md: 'inline-flex' }}
+        fontSize={'sm'}
+        fontWeight={600}
+        color={'white'}
+        bg={'green.400'}
+        href={'/api/signup'}
+        _hover={{
+          bg: 'green.300'
+        }}>
+        Sign up
+      </Button>
+    </>
+  )
+}
+
+const ProfileMenu = ({ user }: ProfileMenuProps) => {
+  return (
+    <Flex alignItems={'center'}>
+      <Menu>
+        <MenuButton
+          as={Button}
+          rounded={'full'}
+          variant={'link'}
+          cursor={'pointer'}>
+          <Avatar
+            size={'sm'}
+            src={user?.picture as string}
+          />
+        </MenuButton>
+        <MenuList>
+          <MenuItem as={'a'} href={'/api/auth/logout'}>Logout</MenuItem>
+        </MenuList>
+      </Menu>
+    </Flex>
+  )
+}
 
 const Navbar = ({ items }: NavbarProps) => {
   const { isOpen, onToggle } = useDisclosure()
+  const { user, isLoading } = useUser()
 
   return (
     <Box>
@@ -59,40 +119,18 @@ const Navbar = ({ items }: NavbarProps) => {
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
           <Logo />
-
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
             <DesktopNav items={items} />
           </Flex>
         </Flex>
-
         <Stack
           flex={{ base: 1, md: 0 }}
           justify={'flex-end'}
           direction={'row'}
           spacing={6}>
           <ColorModeButton />
-          <Button
-            disabled={true}
-            as={'a'}
-            fontSize={'sm'}
-            fontWeight={400}
-            variant={'link'}
-            href={'#'}>
-            Sign In
-          </Button>
-          <Button
-            disabled={true}
-            display={{ base: 'none', md: 'inline-flex' }}
-            fontSize={'sm'}
-            fontWeight={600}
-            color={'white'}
-            bg={'green.400'}
-            href={'#'}
-            _hover={{
-              bg: 'green.300'
-            }}>
-            Sign Up
-          </Button>
+          {!isLoading && user && <ProfileMenu user={user} />}
+          {!isLoading && !user && <SignMenu />}
         </Stack>
       </Flex>
 
