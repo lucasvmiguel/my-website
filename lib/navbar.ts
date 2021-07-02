@@ -12,6 +12,7 @@ export const navItems: Array<NavItem> = [
   },
   {
     label: 'Articles',
+    href: '/articles',
     children: [
       {
         label: 'Article title 1',

@@ -171,6 +171,14 @@ The rule variable can be copied from here on Hasura:
 And saved here on Auth0:
 ![add-rule-variable](docs/hasura/add-rule-variable.png)
 
+#### 9. Set `HASURA_GRAPHQL_UNAUTHORIZED_ROLE` to `anonymous` to allow non authenticated users to access Hasura API
+![add-unauthorized-env-var](docs/hasura/add-unauthorized-env-var.png)
+
+#### 10. Add following env variables to `.env.local`. Otherwise, it won't work in locally. (required for development)
+```
+#Hasura API URI
+NEXT_PUBLIC_HASURA_APOLLO_CLIENT_URI=API_URL
+```
 
 Reference:
 * https://hasura.io/docs/latest/graphql/core/guides/integrations/auth0-jwt.html
@@ -178,4 +186,7 @@ Reference:
 ### Vercel
 
 Add following ENV vars:
+
+Note: first env var is called `NEXT_PUBLIC_HASURA_APOLLO_CLIENT_URI`
+
 ![env-vars](docs/vercel/env-vars.png)
