@@ -9,7 +9,9 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
-    "test:e2e": "cypress run --browser chrome --headless"
+    "test:e2e": "cypress run --browser chrome --headless",
+    "graphql:schema:download": "apollo schema:download --endpoint $HASURA_APOLLO_CLIENT_URI --header \"X-Hasura-Admin-Secret: $HASURA_ADMIN_SECRET\"",
+    "graphql:schema:generate": "apollo client:codegen --target typescript --localSchemaFile schema.json --includes graphql/**/*.ts --globalTypesFile graphql/__generated__/d.ts"
   },
   "dependencies": {
     "@apollo/client": "^3.3.20",
@@ -30,12 +32,14 @@
   "devDependencies": {
     "@babel/preset-typescript": "^7.14.5",
     "@testing-library/react": "^12.0.0",
+    "@types/graphql": "^14.5.0",
     "@types/jest": "^26.0.23",
     "@types/react": "17.0.11",
     "@types/react-test-renderer": "^17.0.1",
     "@types/request": "^2.48.5",
     "@typescript-eslint/eslint-plugin": "^4.28.0",
     "@typescript-eslint/parser": "^4.28.0",
+    "apollo": "^2.33.4",
     "cypress": "^7.6.0",
     "eslint": "^7.29.0",
     "eslint-config-next": "11.0.1",
