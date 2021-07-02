@@ -177,7 +177,7 @@ And saved here on Auth0:
 #### 10. Add following env variables to `.env.local`. Otherwise, it won't work in locally. (required for development)
 ```
 #Hasura API URI
-NEXT_PUBLIC_HASURA_APOLLO_CLIENT_URI=API_URL
+HASURA_APOLLO_CLIENT_URI=API_URL
 ```
 
 Reference:
@@ -187,6 +187,4 @@ Reference:
 
 Add following ENV vars:
 
-Note: first env var is called `NEXT_PUBLIC_HASURA_APOLLO_CLIENT_URI`
-
-![env-vars](docs/vercel/env-vars.png)
+TODO
