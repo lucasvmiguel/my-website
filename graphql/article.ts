@@ -11,3 +11,15 @@ export const GET_ARTICLES_QUERY = gql`
     }
   }
 `
+
+export const GET_ARTICLE_QUERY = gql`
+  query GetArticle($id: Int!) {
+    articles_by_pk(id: $id) {
+      id
+      content
+      picture_href
+      title
+      user_id
+    }
+  }
+`
