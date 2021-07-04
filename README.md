@@ -55,6 +55,16 @@ To run the E2E tests and to save new snapshots run the following command:
 npm run test:e2e
 ```
 
+## Development
+
+### Generate GraphQL schema
+
+Run the following command to generate the typescript types from the GraphQL schema:
+```
+npm run graphql:schema:generate
+```
+
+Note: The env vars `HASURA_APOLLO_CLIENT_URI` and `HASURA_ADMIN_SECRET` must be set
 
 ## Configuration
 
