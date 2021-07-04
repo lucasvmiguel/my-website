@@ -24,6 +24,16 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
+      - name: Check uncommitted changes
+        run: |
+          npm run graphql:schema:generate
+          clean=$(git status | grep "nothing to commit (working directory clean)")
+          if [ -z "$clean" ]; then
+              echo There are uncommitted changes.
+              exit 1
+          else
+              echo Branch is clean.
+          fi
       - run: npm run lint
       - run: npm test
       - name: Cypress run
