@@ -30,7 +30,7 @@ jobs:
           HASURA_ADMIN_SECRET: ${{ secrets.HASURA_ADMIN_SECRET }}
         run: |
           npm run graphql:schema:generate
-          clean=$(git status | grep "nothing to commit (working directory clean)")
+          clean=$(git status | grep "nothing to commit")
           if [ -z "$clean" ]; then
               echo There are uncommitted changes.
               exit 1
