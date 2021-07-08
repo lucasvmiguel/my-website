@@ -10,6 +10,7 @@
     "lint": "next lint",
     "test": "jest",
     "test:e2e": "cypress run --browser chrome --headless",
+    "test:e2e:debug": "node_modules/.bin/cypress open",
     "graphql:schema:cleanup": "rm -rf graphql/__generated__",
     "graphql:schema:download": "apollo schema:download --endpoint $HASURA_APOLLO_CLIENT_URI --header \"X-Hasura-Admin-Secret: $HASURA_ADMIN_SECRET\"",
     "graphql:schema:generate": "npm run graphql:schema:cleanup && npm run graphql:schema:download && apollo client:codegen --target typescript --localSchemaFile schema.json --includes graphql/**/*.ts --globalTypesFile graphql/__generated__/globalTypes.d.ts --tsFileExtension d.ts"
@@ -42,6 +43,7 @@
     "@typescript-eslint/parser": "^4.28.0",
     "apollo": "^2.33.4",
     "cypress": "^7.6.0",
+    "cypress-image-snapshot": "^4.0.1",
     "eslint": "^7.29.0",
     "eslint-config-next": "11.0.1",
     "eslint-config-standard": "^16.0.3",
